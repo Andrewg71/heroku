@@ -61,7 +61,7 @@ app.get("/*", (req, res)=>{
     res.render('error')
 })
 
-app.listen(3000, ()=> {
+app.listen(80, ()=> {
     console.log('Server is running at localhost:3000');
 });
 
