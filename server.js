@@ -61,7 +61,9 @@ app.get("/*", (req, res)=>{
     res.render('error')
 })
 
-app.listen(80, ()=> {
+const port = process.env.PORT || 80
+
+app.listen(port, ()=>{
     console.log('Server is running at localhost:3000');
 });
 
